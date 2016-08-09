@@ -31,14 +31,10 @@ public class SecondMapsActivity extends AppCompatActivity implements OnMapReadyC
 
         map = googleMap;
 
-        // Add a marker in Sydney and move the camera
+        // Add a marker in Delhi and move the camera
         LatLng markerLatLong = new LatLng(28.6139, 77.2090);
        /* mMap.addMarker(new MarkerOptions()
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_location))
                 .position(markerLatLong));*/
-        map.addMarker(new MarkerOptions().position(markerLatLong).title("Marker at Delhi"));
-        map.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
-        map.moveCamera(CameraUpdateFactory.newLatLng(markerLatLong));
-        //mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(28.6139, 77.2090),18));
     }
 }

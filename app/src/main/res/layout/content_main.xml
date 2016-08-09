@@ -13,11 +13,24 @@
     tools:showIn="@layout/activity_main"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textColor="#ffffff"
+        android:background="#4e4e4e"
+        android:text="Codes below include functionalities like addMarker, add custom icon, add at specific position, title, setMapType, moveCamera, moveCamera with zoom, animateCamera with zoom, setTrafficEnabled, setMyLocationEnabled, setBuildingsEnabled, setIndoorEnabled"
+        />
+
     <Button
         android:id="@+id/mapbutton1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Location on Map" />
+        android:background="#669999"
+        android:text="Maps One"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff"
+        />
 
     <Button
         android:id="@+id/mapbutton2"
