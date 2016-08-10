@@ -1,4 +1,4 @@
-package com.upskillcalendar.googlemapsapplication;
+package com.upskillcalendar.googlemapsapplication.SecondApp;
 
 import android.app.Activity;
 import android.content.Context;
@@ -25,6 +25,7 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.upskillcalendar.googlemapsapplication.R;
 
 public class SecondMapsActivity extends AppCompatActivity implements OnMapReadyCallback{
 

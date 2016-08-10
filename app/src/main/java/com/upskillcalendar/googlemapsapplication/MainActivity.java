@@ -2,8 +2,6 @@ package com.upskillcalendar.googlemapsapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -11,9 +9,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.upskillcalendar.googlemapsapplication.FirstApp.FirstMapsActivity;
+import com.upskillcalendar.googlemapsapplication.SecondApp.SecondMapsActivity;
+import com.upskillcalendar.googlemapsapplication.ThirdApp.GPSLocation;
+
 public class MainActivity extends AppCompatActivity {
 
-    Button buttonActivityone,buttonActivitytwo;
+    Button buttonActivityone,buttonActivitytwo,ButtonActivitythree;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonActivityone = (Button)findViewById(R.id.mapbutton1);
         buttonActivitytwo = (Button)findViewById(R.id.mapbutton2);
+        ButtonActivitythree = (Button)findViewById(R.id.locationbutton);
 
         buttonActivityone.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +38,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,SecondMapsActivity.class));
+            }
+        });
+
+        ButtonActivitythree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,GPSLocation.class));
             }
         });
     }
