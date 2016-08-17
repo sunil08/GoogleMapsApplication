@@ -60,7 +60,8 @@ public class SecondMapsActivity extends AppCompatActivity implements OnMapReadyC
 
         // setOnCameraChangeListener and setOnMarkerDragListener does not work simultaneously and at the same time so embed camera change in drag listener
 
-/*        map.setOnCameraChangeListener(new GoogleMap.OnCameraChangeListener() {
+        /*map.setOnCameraChangeListener(new GoogleMap.OnCameraChangeListener() {
+
             @Override
             public void onCameraChange(CameraPosition cameraPosition) {
                 map.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(28.6139, 77.2090),map.getCameraPosition().zoom));

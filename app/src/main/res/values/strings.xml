@@ -4,4 +4,8 @@
     <string name="title_activity_first_maps">Map</string>
     <string name="title_activity_second_maps">SecondMapsActivity</string>
     <string name="title_activity_gpslocation">GPSLocation</string>
+    <string name="title_activity_poly_line_app">PolyLineApp</string>
+    <string name="title_activity_map_marker_at_center">MapMarkerAtCenter</string>
+    <string name="title_activity_lite_mode_maps">LiteModeMaps</string>
+    <string name="title_activity_lite_map_list">LiteMapList</string>
 </resources>

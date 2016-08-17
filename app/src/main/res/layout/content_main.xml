@@ -13,61 +13,150 @@
     tools:showIn="@layout/activity_main"
     android:orientation="vertical">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:textColor="#ffffff"
-        android:background="#4e4e4e"
-        android:text="Codes below include functionalities like addMarker, add custom icon, add at specific position, title, setMapType, moveCamera, moveCamera with zoom, animateCamera with zoom, setTrafficEnabled, setMyLocationEnabled, setBuildingsEnabled, setIndoorEnabled"
-        />
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/mapbutton1"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#669999"
-        android:text="Maps One"
-        android:layout_marginTop="5dp"
-        android:textColor="#ffffff"
-        />
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:textColor="#ffffff"
-        android:background="#4e4e4e"
-        android:layout_marginTop="6dp"
-        android:text="This includes camera change listener if the map is dragged and marker drag listener."
-        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="#ffffff"
+            android:background="#4e4e4e"
+            android:text="Codes below include functionalities like addMarker, add custom icon, add at specific position, title, setMapType, moveCamera, moveCamera with zoom, animateCamera with zoom, setTrafficEnabled, setMyLocationEnabled, setBuildingsEnabled, setIndoorEnabled"
+            />
 
-    <Button
-        android:id="@+id/mapbutton2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Location on Map"
-        android:layout_marginTop="6dp"
-        android:background="#339966"
-        android:textColor="#fff"/>
+        <Button
+            android:id="@+id/mapbutton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#669999"
+            android:text="Maps One"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:textColor="#ffffff"
-        android:background="#4e4e4e"
-        android:layout_marginTop="6dp"
-        android:text="This includes getting Latitude and longitude using GPS and network then extracting the address on the basis of it."
-        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="#ffffff"
+            android:background="#4e4e4e"
+            android:layout_marginTop="6dp"
+            android:text="This includes camera change listener if the map is dragged and marker drag listener."
+            />
 
-    <Button
-        android:id="@+id/locationbutton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Location lat long"
-        android:layout_marginTop="6dp"
-        android:background="#339966"
-        android:textColor="#fff"/>
+        <Button
+            android:id="@+id/mapbutton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location on Map"
+            android:layout_marginTop="6dp"
+            android:background="#339966"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="#ffffff"
+            android:background="#4e4e4e"
+            android:layout_marginTop="6dp"
+            android:text="This includes getting Latitude and longitude using GPS and network then extracting the address on the basis of it."
+            />
+
+        <Button
+            android:id="@+id/locationbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location lat long"
+            android:layout_marginTop="6dp"
+            android:background="#336699"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="#ffffff"
+            android:background="#4e4e4e"
+            android:layout_marginTop="6dp"
+            android:text="This includes drawing line hardcoded and by clicking on maps with cleaning drawn lines."
+            />
+
+        <Button
+            android:id="@+id/polylinebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Creating polylines"
+            android:layout_marginTop="6dp"
+            android:background="#006699"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="#ffffff"
+            android:background="#4e4e4e"
+            android:layout_marginTop="6dp"
+            android:text="This includes marker at the center with the real position where we can find out the actual latitude and longitude of the center camera placed."
+            />
+
+        <Button
+            android:id="@+id/mapbutton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Center Marker"
+            android:layout_marginTop="6dp"
+            android:background="#00cc99"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="#ffffff"
+            android:background="#4e4e4e"
+            android:layout_marginTop="6dp"
+            android:text="Below screen includes Lite map where we markers and polygons are loaded first the the map is loaded. It handles the memory loads."
+            />
+
+        <Button
+            android:id="@+id/mapbutton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lite Map"
+            android:layout_marginTop="6dp"
+            android:background="#993399"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="#ffffff"
+            android:background="#4e4e4e"
+            android:layout_marginTop="6dp"
+            android:text="Below screen includes Lite map in listview where it loads the maps faster."
+            />
+
+        <Button
+            android:id="@+id/mapbutton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lite Map List"
+            android:layout_marginTop="6dp"
+            android:background="#666699"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

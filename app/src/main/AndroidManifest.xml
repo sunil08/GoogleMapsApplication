@@ -8,7 +8,7 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -49,6 +49,22 @@
         <activity
             android:name=".ThirdApp.GPSLocation"
             android:label="@string/title_activity_gpslocation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FourthApp.PolyLineApp"
+            android:label="@string/title_activity_poly_line_app"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FifthApp.MapMarkerAtCenter"
+            android:label="@string/title_activity_map_marker_at_center"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SixthApp.LiteModeMaps"
+            android:label="@string/title_activity_lite_mode_maps"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SeventhApp.LiteMapList"
+            android:label="@string/title_activity_lite_map_list"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

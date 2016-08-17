@@ -9,13 +9,17 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.upskillcalendar.googlemapsapplication.FifthApp.MapMarkerAtCenter;
 import com.upskillcalendar.googlemapsapplication.FirstApp.FirstMapsActivity;
+import com.upskillcalendar.googlemapsapplication.FourthApp.PolyLineApp;
 import com.upskillcalendar.googlemapsapplication.SecondApp.SecondMapsActivity;
+import com.upskillcalendar.googlemapsapplication.SeventhApp.LiteMapList;
+import com.upskillcalendar.googlemapsapplication.SixthApp.LiteModeMaps;
 import com.upskillcalendar.googlemapsapplication.ThirdApp.GPSLocation;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button buttonActivityone,buttonActivitytwo,ButtonActivitythree;
+    Button buttonActivityone,buttonActivitytwo,ButtonActivitythree,ButtonActivityfour,ButtonActivityfive, buttonActivitysix, buttonActiityseven;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,25 +30,57 @@ public class MainActivity extends AppCompatActivity {
         buttonActivityone = (Button)findViewById(R.id.mapbutton1);
         buttonActivitytwo = (Button)findViewById(R.id.mapbutton2);
         ButtonActivitythree = (Button)findViewById(R.id.locationbutton);
+        ButtonActivityfour = (Button)findViewById(R.id.polylinebtn);
+        ButtonActivityfive = (Button)findViewById(R.id.mapbutton5);
+        buttonActivitysix = (Button)findViewById(R.id.mapbutton6);
+        buttonActiityseven = (Button)findViewById(R.id.mapbutton7);
 
         buttonActivityone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,FirstMapsActivity.class));
+                startActivity(new Intent(MainActivity.this,FirstMapsActivity.class));       // First App Package
             }
         });
 
         buttonActivitytwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,SecondMapsActivity.class));
+                startActivity(new Intent(MainActivity.this,SecondMapsActivity.class));      // Second App Package
             }
         });
 
         ButtonActivitythree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,GPSLocation.class));
+                startActivity(new Intent(MainActivity.this,GPSLocation.class));             // Third App Package
+            }
+        });
+
+        ButtonActivityfour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,PolyLineApp.class));             // Fourth App Package
+            }
+        });
+
+        ButtonActivityfive.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,MapMarkerAtCenter.class));       // Fifth App Package
+            }
+        });
+
+        buttonActivitysix.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,LiteModeMaps.class));       // Fifth App Package
+            }
+        });
+
+        buttonActiityseven.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,LiteMapList.class));       // Fifth App Package
             }
         });
     }
